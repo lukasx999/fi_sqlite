@@ -1,0 +1,1 @@
+- euro von cent trennen, wegen floating point präzision
