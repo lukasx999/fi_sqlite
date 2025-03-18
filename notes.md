@@ -1,1 +1,4 @@
 - euro von cent trennen, wegen floating point präzision
+- floating point division: floating point literals verwenden
+- alias incoming/outgoing kann nicht direkt wiederverwendet werden: deshalb wrappen in outer select
+- group by: zeilen mit demselben datum werden zusammengefasst
