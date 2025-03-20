@@ -4,6 +4,10 @@
 - group by: zeilen mit demselben datum werden zusammengefasst
 - für grouping: aggregiertende funktionen: aus mehreren werten einen datensatz erzeugen: zb sum()
 
+
+plz, hausnummer immer text
+geburtsdatum DATETIME
+
 # Datenmodellierung
 
 ## MUSS
