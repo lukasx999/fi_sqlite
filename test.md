@@ -48,6 +48,19 @@ CREATE TABLE player (
     name TEXT NOT NULL,
 );
 
+CREATE TABLE game (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+);
+
+CREATE TABLE join_table (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    player_id INTEGER,
+    game_id INTEGER,
+    FOREIGN KEY (player_id) REFERENCES player(id)
+    FOREIGN KEY (game_id) REFERENCES highscore(id)
+);
+
 CREATE TABLE highscore (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     score INT NOT NULL,
